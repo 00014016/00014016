@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.section{   
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:#f65275;
+    justify-content: space-between;
+
+}
+.h-logo{
+    width:45%;
+    height: 95%;
+}
+.nav a{
+    padding-right: 15px;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 170%;
+    font-family:'Acme', sans-serif;
+    transition: 0.3s ease;
+
+    border-radius: 30px;
+}
+
+.nav a:hover{
+    background-color: #ffffff;
+    color: #f65275;
+    scale: 90%;
+}
+.nav{
+    padding: 3px;
+    padding-top:1%;
+    padding-right:5%;
+}
