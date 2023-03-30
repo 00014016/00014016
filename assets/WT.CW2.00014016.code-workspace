@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "../WT.CW2.00014016"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../node_modules"
+		},
+		{
+			"path": "../public"
+		},
+		{
+			"path": "../views"
+		}
+	],
+	"settings": {}
+}
