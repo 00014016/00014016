@@ -1,0 +1,25 @@
+extends layout.pug 
+
+block content 
+    .head
+        h1.header All Blogs
+   
+    .container 
+    
+        each blog in blogs
+            .blog-wrapper 
+                img(src=`/static/uploads/${blog.image}`, alt="")
+                .contents 
+                    .content 
+                        a.title(href=`/blog/${blog.id}`) #{ blog.title }  
+                        a.name(href=`/blog/${blog.id}`) 
+                            em #{blog.name} 
+                    .controls 
+                        a.edit(href=`/update/${blog.id}`)
+                            img(src="/static/assets/edit.png", alt="")
+                        a.delete(href=`/${blog.id}/delete`)
+                            img(src="/static/assets/close.png", alt="")  
+                        .time-container    
+                            p.date #{blog.date}
+                            p.time #{blog.time}
+                            

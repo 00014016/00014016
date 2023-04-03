@@ -1,0 +1,17 @@
+extends layout.pug
+block content 
+    .head
+        h1.header Detail
+    .detail-wrapper
+        .detail-container    
+            .title-wrapper
+                h1.blog-title #{blog.title}
+                a.edit(href=`/update/${blog.id}`)
+                    img(src="/static/assets/edit.png", alt="")
+            p.blog-description #{blog.news}
+            .image-content 
+                img(src=`/static/uploads/${blog.image}`, alt="")
+            .data-container    
+                p.date #{Lblog.date} at #{blog.time}
+
+            

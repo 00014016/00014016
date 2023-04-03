@@ -1,0 +1,32 @@
+extends layout.pug 
+
+block content 
+    .head
+        h1.header Edit your blog
+    .background
+        if error
+            p.error Some error occured! Try again!
+        if success  
+            p.success Note is updated!
+        .container
+            .wrapper
+                .input-data
+                    form(action=`/update/${blog.id}`, method="post" enctype="multipart/form-data")
+                         
+                        input.input1(type="text", name="title", value=`${blog.title}`)
+                        
+                        label.label1 Title
+
+                         
+                        input.input2(type="text", name="name",value=`${blog.name}`)
+                        
+                        label.label2 Username 
+
+                         
+                        input.input3(type="text", name="news",value=`${blog.news}`)
+                        
+                        label.label3 Spit it out!
+                        .img-container 
+                            input(type="file" class="upload-box" name="image",value=`${blog.image}`)
+                        div.button-container
+                            button.input Update

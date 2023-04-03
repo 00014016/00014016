@@ -5,19 +5,23 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         
-        link(rel="shortcut icon" type="image" href="./assets/LOGO_HEADER.png")
+        link(rel="shortcut icon" type="image" href="/static/assets/LOGO.png")
         title Catch-UP
         link(rel="stylesheet", href="/static/style.css")
-        link(rel="preconnect" href="https://fonts.googleapis.com")
-        link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
-        link(href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet")
+        link(rel="preconnect", href="https://fonts.googleapis.com")
+        link(rel="preconnect", href="https://fonts.gstatic.com", crossorigin)
+        link(href="https://fonts.googleapis.com/css2?family=Acme&display=swap", rel="stylesheet")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==", crossorigin="anonymous", referrerpolicy="no-referrer")
     body 
-        header.section
-            a(href="/")
-                img.h-logo(src='./assets/WIUT CATCH-UP(LOGO).png', href="/")
+        header.section 
+            a(href="/")  
+                img.h-logo(src='/static/assets/big.png', href="/") 
+                
+                
+
 
             nav.nav
-                a(href="/home") All Blogs        
+                a(href='/allblogs') All Blogs        
                 a(href="/create") Add
                 
 
